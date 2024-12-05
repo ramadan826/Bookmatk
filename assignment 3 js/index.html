@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bookmark</title>
+    
+</head>
+<body>
+
+<div class="container pt-3">
+<h1 class="text-center mt-5 pb-3">Bookmarker</h1>
+<hr>
+<div class="from-project  mt-5 ">
+<h2 class="pb-5 text-center fs-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favor<span class="clor">ite</span> <span>sites <i class="fa-solid fa-bookmark"></i></span> </h2>
+<div class="col-mb-3">
+  <label for="formGroupExampleInput" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+  <input type="text" class="form-control" id="Name" placeholder="Bookmark Name" oninput="vaildation(this)">
+  <div class="box  my-3 alert alert-danger d-none">
+    <p> Site Name is not valid, Please follow the rules below :</p>
+    <p><i class="fa-regular fa-circle-right p-2"></i>the one character must be captialize</p>
+    <p><i class="fa-regular fa-circle-right p-2"></i>Site name must contain at least 3 characters</p>
+  </div>
+</div>
+<div class="col-mb-3 my-4">
+    <label for="formGroupExampleInput" class="form-label fw-bold"><i class="fa-solid fa-link"></i> Site URL</label>
+    <input type="text" class="form-control" id="url" placeholder="Website URL" oninput="vaildation(this)">
+    <div class="box  my-3 alert alert-danger d-none ">
+      <p> the Url is not valid, Please follow the rules below :</p>
+      <p><i class="fa-regular fa-circle-right p-2"></i>Site URL must be a valid one</p>
+      <p><i class="fa-regular fa-circle-right p-2"></i>example: xxxxxxxxx.com</p>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center my-3">
+  <button type="button" onclick="addProduct()" class="btn btn-danger text-center my-2 fs-6 px-5">Submit</button>
+
+  </div>
+<hr>
+
+<table class="table text-center">
+    <thead>
+      <tr>
+        <th >Index</th>
+        <th >Website Name</th>
+        <th >Visit</th>
+        <th >Delete</th>
+      </tr>
+    </thead>
+    <tbody id="demo">
+     
+    </tbody>
+  </table>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>

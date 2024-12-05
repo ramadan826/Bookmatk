@@ -1,0 +1,38 @@
+body{
+    background-color: #F7ECDE;
+}
+
+.container h1{
+    color: #352E28;
+    font-family: "Pacifico", cursive;
+
+    font-weight: 400;
+    font-size: 50px;
+    position: relative;
+ z-index: 33;
+
+}
+/* .container h1::after{
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+  
+height: 25%;
+
+width: 20%;
+
+} */
+ .container h2{
+    font-family: "Righteous", sans-serif;
+    color: #3ea55c;
+ }
+ .container h2 span{
+    color: #b1ab49;
+ }
+ .container h2 span .clor{
+    color: #95ab52;
+ }
+ label{
+    font-family: "PT Sans Caption", sans-serif;
+ }
